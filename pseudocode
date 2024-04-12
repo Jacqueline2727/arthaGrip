@@ -1,0 +1,10 @@
+arthaGrip Pseudocode
+
+//Get x, y, z positions of the device
+//Calculate the pitch (up/down) and roll (left/right) compared to the original position
+//Calculate the change in pitch and roll from previous update
+//Add change to total degree displacement
+
+//if degree displacement > 360 (one full rotation)
+  //reset to original position
+  //add one to the number of rotations
