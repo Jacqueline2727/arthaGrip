@@ -1,5 +1,6 @@
 arthaGrip Pseudocode
 
+DATA ON WRIST ROTATIONS:
 //Get x, y, z positions of the device
 //Calculate the pitch (up/down) and roll (left/right) compared to the original position
 //Calculate the change in pitch and roll from previous update
@@ -8,3 +9,52 @@ arthaGrip Pseudocode
 //if degree displacement > 360 (one full rotation)
   //reset to original position
   //add one to the number of rotations
+
+PERSONALIZED TREATMENT:
+// The maximum number of wrist rotations is 747 for the "healthiest individual"
+
+//GENDER
+// if female
+  // lower the max number of wrist rotations/hour
+  // women are more likely to experience greater pain from arthritis than men due to 
+  //a combination of hormonal, biological, and genetic factors
+
+//AGE
+// the older a person is
+  // lower the max number of wrist rotations/hour
+  // excess weight increases with age which places larger stress on the joints leading to pain
+
+//TYPE OF ARTHRITIS
+// if OA
+  // lower the max number of wrist rotations/hour by level 1
+// else if RA
+  //lower the max number of wrist rotations/hour by level 2
+// else if RA && OA
+  // lower the max number of wrist rotations/hour by level 3
+
+//STAGE OF ARTHRITIS
+// if stage 1
+  // lower the max number of wrist rotations/hour by level 1
+// else if stage 2
+  // lower the max number of wrist rotations/hour by level 2
+// else if stage 3
+  // lower the max number of wrist rotations/hour by level 3
+  // recommend heat treatment during warm ups to decrease joint inflammation
+// else
+  // recommend the user not to basket weave without consulting a doctor
+
+//WHAT IS AFFECTED
+// if wrist
+  // lower the max number of wrist rotations/hour
+// if fingers
+  //lower the max number of wrist rotations/hour
+  //pop ups asking the user if their fingers are in pain
+// if hand
+  //lower the max number of wrist rotations/hour
+// if back
+  //lower the max number of wrist rotations/hour
+  //remind the user to stand up during break times
+
+//CURRENT TREATMENT
+// if no
+  //lower the max number of wrist rotations/hour
