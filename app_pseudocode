@@ -1,34 +1,38 @@
-PERSONALIZED TREATMENT: The maximum number of wrist rotations is 747 for the "healthiest individual"
+PERSONALIZED TREATMENT: The range for the maximum number of wrist rotations is 124 ("severe arthritis")-744 ("healthiest individual")
+- each stage is incremented by 62 wrist rotations
 
 GENDER
   if female
-    lower the max number of wrist rotations/hour
+    lower the max number of wrist rotations/hour by 1 stage
     (women are more likely to experience greater pain from arthritis than men due to 
     a combination of hormonal, biological, and genetic factors)
 
 AGE
   the older a person is
-    lower the max number of wrist rotations/hour
+    lower the max number of wrist rotations/hour by 2/year
     (excess weight increases with age which places larger stress on the joints leading to pain)
 
 TYPE OF ARTHRITIS
   if OA
-    lower the max number of wrist rotations/hour by level 1
+    lower the max number of wrist rotations/hour by 1 stage
   else if RA
-    lower the max number of wrist rotations/hour by level 2
+    lower the max number of wrist rotations/hour by 2 stages
   else if RA && OA
-    lower the max number of wrist rotations/hour by level 3
+    lower the max number of wrist rotations/hour by 3 stages
+  else
+    do not change max number of wrist rotations/hour
 
 STAGE OF ARTHRITIS
-  if stage 1
-    lower the max number of wrist rotations/hour by level 1
+  if stage 1 or no arthritis
+    do not change max number of wrist rotations/hour
   else if stage 2
-    lower the max number of wrist rotations/hour by level 2
+    lower the max number of wrist rotations/hour to 537
   else if stage 3
-    lower the max number of wrist rotations/hour by level 3
+    lower the max number of wrist rotations/hour to 331
     recommend heat treatment during warm ups to decrease joint inflammation
   else
     recommend the user not to basket weave without consulting a doctor
+    lower the max number of wrist rotations/hour to 124
 
 WHAT IS AFFECTED
   if wrist
@@ -44,4 +48,4 @@ WHAT IS AFFECTED
 
 CURRENT TREATMENT
   if no
-    lower the max number of wrist rotations/hour
+    lower the max number of wrist rotations/hour by 1 stage
